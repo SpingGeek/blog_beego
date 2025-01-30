@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        
+        <title>用户管理</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-3 justify-content-center">
+                <div class="col-md-4">
+                    <form method="post" action="/users">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">用户名称</label>
+                            <input type="text" class="form-control"
+                                id="username"
+                                name="username">
+                    
+                        </div>
+                        <div class="mb-3">
+                            <label for="password"
+                                class="form-label">密码</label>
+                            <input type="password" class="form-control"
+                                name="password"
+                                id="password">
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary">添加</button>
+                    </form>
+
+                    <hr>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">tom 123</li>
+                        <li class="list-group-item">kite 456</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
